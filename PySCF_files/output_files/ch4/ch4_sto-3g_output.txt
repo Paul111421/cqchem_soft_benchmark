@@ -1,0 +1,68 @@
+
+
+******** <class 'pyscf.scf.hf.RHF'> ********
+method = RHF
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+diis_damp = 0
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 50
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /tmp/tmp6ddymq86
+max_memory 4000 MB (current use 99 MB)
+Set gradient conv threshold to 3.16228e-05
+Initial guess from minao.
+E1 = -78.79150467219864  E_coul = 25.72430523554042
+init E= -39.5391211853926
+cond(S) = 10.761811852743243
+    CPU time for initialize scf      0.12 sec, wall time      0.06 sec
+  HOMO = -0.429917688810031  LUMO = 0.621675654391428
+  mo_energy =
+[-11.08769681  -1.20250597  -0.42991769  -0.42991769  -0.42991769
+   0.62167565   0.6221797    0.6221797    0.6221797 ]
+E1 = -79.54753753975777  E_coul = 26.295442113339707
+cycle= 1 E= -39.7240171751525  delta_E= -0.185  |g|= 0.0857  |ddm|= 2.13
+    CPU time for cycle= 1      0.01 sec, wall time      0.00 sec
+  HOMO = -0.516539567222471  LUMO = 0.723436682237337
+  mo_energy =
+[-11.01706672  -0.91273766  -0.51653957  -0.51653957  -0.51653957
+   0.72343668   0.72343668   0.72343668   0.75985489]
+E1 = -79.49186151520004  E_coul = 26.237091571746163
+cycle= 2 E= -39.7266916921883  delta_E= -0.00267  |g|= 0.0198  |ddm|= 0.128
+    CPU time for cycle= 2      0.03 sec, wall time      0.00 sec
+  HOMO = -0.522140317477416  LUMO = 0.718018000175164
+  mo_energy =
+[-11.03561595  -0.91422043  -0.52214032  -0.52214032  -0.52214032
+   0.718018     0.718018     0.718018     0.76017317]
+E1 = -79.50591243076329  E_coul = 26.250972735904764
+cycle= 3 E= -39.7268614435929  delta_E= -0.00017  |g|= 0.00221  |ddm|= 0.037
+    CPU time for cycle= 3      0.03 sec, wall time      0.01 sec
+  HOMO = -0.520687150163474  LUMO = 0.719651229557548
+  mo_energy =
+[-11.02964902  -0.91235989  -0.52068715  -0.52068715  -0.52068715
+   0.71965123   0.71965123   0.71965123   0.76180325]
+E1 = -79.50179094501254  E_coul = 26.24684978998421
+cycle= 4 E= -39.7268629037627  delta_E= -1.46e-06  |g|= 2.73e-06  |ddm|= 0.00331
+    CPU time for cycle= 4      0.06 sec, wall time      0.01 sec
+  HOMO = -0.520684869914423  LUMO = 0.719648313408512
+  mo_energy =
+[-11.02964613  -0.91234215  -0.52068487  -0.52068487  -0.52068487
+   0.71964831   0.71964831   0.71964831   0.76178579]
+E1 = -79.50179452771243  E_coul = 26.246853372682526
+cycle= 5 E= -39.7268629037643  delta_E= -1.58e-12  |g|= 2.12e-07  |ddm|= 3.61e-06
+    CPU time for cycle= 5      0.05 sec, wall time      0.01 sec
+  HOMO = -0.520684907328549  LUMO = 0.719648640596532
+  mo_energy =
+[-11.02964591  -0.91234325  -0.52068491  -0.52068491  -0.52068491
+   0.71964864   0.71964864   0.71964864   0.76178709]
+E1 = -79.50179398540493  E_coul = 26.246852830374948
+Extra cycle  E= -39.7268629037644  delta_E= -7.11e-14  |g|= 3.72e-08  |ddm|= 3.15e-07
+    CPU time for scf_cycle      0.31 sec, wall time      0.10 sec
+    CPU time for SCF      0.31 sec, wall time      0.10 sec
+converged SCF energy = -39.7268629037644

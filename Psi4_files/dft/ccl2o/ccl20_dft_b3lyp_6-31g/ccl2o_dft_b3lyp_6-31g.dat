@@ -1,0 +1,16 @@
+#! Sample DFT/6-31G CCl2O computation
+
+memory 600 mb
+
+molecule ccl2o {
+  O1   0.000  0.000  1.726
+  C2   0.000  0.000  0.531
+  Cl3  0.000  1.511 -0.500
+  Cl4  0.000 -1.511 -0.500
+  units angstrom
+}
+
+
+set basis 6-31G
+energy('scf', dft_functional='b3lyp')
+

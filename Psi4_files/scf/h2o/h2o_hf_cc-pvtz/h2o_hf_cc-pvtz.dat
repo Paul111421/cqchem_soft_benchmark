@@ -1,0 +1,15 @@
+#! Sample HF/cc-pVTZ H2O computation
+
+memory 600 mb
+
+molecule h2o {
+  O  0.000  0.000  0.113
+  H  0.000  0.751 -0.453
+  H  0.000 -0.751 -0.453
+  units angstrom
+}
+
+
+set basis cc-pVTZ
+energy('scf')
+

@@ -1,0 +1,24 @@
+start h2o
+
+memory 1000 mb
+
+geometry units angstroms
+  O     0.000     0.000     0.127
+  H     0.000     0.758    -0.509
+  H     0.000    -0.758    -0.509
+end
+
+basis
+  O library sto-3g
+  H library sto-3g
+end
+
+scf
+  singlet
+  rhf
+  thresh 1e-8
+  maxiter 100
+  print low
+end
+
+task scf

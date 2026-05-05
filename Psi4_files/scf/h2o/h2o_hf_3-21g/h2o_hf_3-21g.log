@@ -1,0 +1,3 @@
+2026-05-05:08:21:12,371 INFO     [psi4.driver.task_planner:259] PLANNING Atomic:  keywords={'function_kwargs': {}}
+2026-05-05:08:21:12,376 INFO     [psi4.driver.driver:525] Compute energy(): method=scf, basis=3-21g, molecule=h2o, nre=9.103379893940366
+2026-05-05:08:21:12,862 INFO     [psi4.driver.driver:528] Return energy(): -75.58588951678549

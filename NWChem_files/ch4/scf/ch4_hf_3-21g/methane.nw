@@ -1,0 +1,29 @@
+start methane
+
+memory 1000 mb
+
+geometry units angstroms
+  C1     0.000     0.000     0.000
+  H1     0.625     0.625     0.625
+  H2    -0.625    -0.625     0.625
+  H3    -0.625     0.625    -0.625
+  H4     0.625    -0.625    -0.625 
+end
+
+basis
+  C library 3-21g
+  H library 3-21g
+end
+
+scf
+  singlet
+  rhf
+  thresh 1e-8
+  maxiter 100
+  print low
+end
+
+task scf
+
+
+

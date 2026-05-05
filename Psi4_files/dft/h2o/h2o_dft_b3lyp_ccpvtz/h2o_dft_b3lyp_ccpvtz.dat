@@ -1,0 +1,15 @@
+#! Sample DFT/cc-pVTZ H2O computation
+
+memory 600 mb
+
+molecule h2o {
+  O  0.000  0.000  0.118
+  H  0.000  0.760 -0.471
+  H  0.000 -0.760 -0.471
+  units angstrom
+}
+
+
+set basis cc-pVTZ
+energy('scf', dft_functional = 'b3lyp')
+

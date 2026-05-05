@@ -1,0 +1,30 @@
+#NWChem SCF Single Point Energy Calculation for H2O
+start h2o
+
+# Memory allocation (adjust as needed)
+memory 1000 mb
+
+# Geometry specification
+geometry units angstroms
+  O     0.000     0.000     0.107
+  H     0.000     0.785    -0.427
+  H     0.000    -0.785    -0.427
+end
+
+# Basis set
+basis
+  O library 6-31g
+  H library 6-31g
+end
+
+# Hartree-Fock SCF calculation
+scf
+  singlet
+  rhf
+  thresh 1e-8
+  maxiter 100
+  print low
+end
+
+# Task directive
+task scf

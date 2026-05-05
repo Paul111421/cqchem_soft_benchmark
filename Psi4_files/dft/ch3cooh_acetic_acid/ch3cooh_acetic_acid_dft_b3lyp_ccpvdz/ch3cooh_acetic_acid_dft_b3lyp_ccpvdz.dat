@@ -1,0 +1,20 @@
+#! Sample DFT/cc-pVDZ CH3COOH computation
+
+memory 600 mb
+
+molecule ch3cooh {
+  C1   1.060 -0.916  0.000
+  C2   0.000  0.156  0.000
+  O3   0.192  1.350  0.000
+  H4   2.053 -0.451  0.000
+  H5   0.941 -1.558  0.886
+  H6   0.941 -1.558 -0.886
+  O7  -1.247  0.381  0.000
+  H8  -1.859  0.378  0.000
+  units angstrom
+}
+
+
+set basis cc-pVDZ
+energy('scf', dft_functional = 'b3lyp')
+

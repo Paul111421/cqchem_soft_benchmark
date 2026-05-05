@@ -1,0 +1,16 @@
+#! Sample HF/cc-pVDZ CCl2O computation
+
+memory 600 mb
+
+molecule ccl2o {
+  O1   0.000  0.000  1.648
+  C2   0.000  0.000  0.492
+  Cl3  0.000  1.448 -0.475
+  Cl4  0.000 -1.448 -0.475
+  units angstrom
+}
+
+
+set basis cc-pVDZ
+energy('scf')
+

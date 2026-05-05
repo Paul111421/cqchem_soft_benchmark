@@ -1,0 +1,25 @@
+start h2o
+
+memory 1000 mb
+
+geometry units angstroms
+  O     0.000     0.000     0.113
+  H     0.000     0.751    -0.453
+  H     0.000    -0.751    -0.453
+end
+
+basis
+  O library cc-pvtz
+  H library cc-pvtz
+end
+
+scf
+  singlet
+  rhf
+  thresh 1e-8
+  maxiter 100
+  print low
+end
+
+task scf
+

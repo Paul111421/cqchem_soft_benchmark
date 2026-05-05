@@ -1,0 +1,395 @@
+
+    -----------------------------------------------------------------------
+          Psi4: An Open-Source Ab Initio Electronic Structure Package
+                               Psi4 1.10 release
+
+                         Git: Rev {} zzzzzzz 
+
+
+    D. G. A. Smith, L. A. Burns, A. C. Simmonett, R. M. Parrish,
+    M. C. Schieber, R. Galvelis, P. Kraus, H. Kruse, R. Di Remigio,
+    A. Alenaizan, A. M. James, S. Lehtola, J. P. Misiewicz, M. Scheurer,
+    R. A. Shaw, J. B. Schriber, Y. Xie, Z. L. Glick, D. A. Sirianni,
+    J. S. O'Brien, J. M. Waldrop, A. Kumar, E. G. Hohenstein,
+    B. P. Pritchard, B. R. Brooks, H. F. Schaefer III, A. Yu. Sokolov,
+    K. Patkowski, A. E. DePrince III, U. Bozkaya, R. A. King,
+    F. A. Evangelista, J. M. Turney, T. D. Crawford, C. D. Sherrill,
+    J. Chem. Phys. 152(18) 184108 (2020). https://doi.org/10.1063/5.0006002
+
+                            Additional Code Authors
+    E. T. Seidl, C. L. Janssen, E. F. Valeev, M. L. Leininger,
+    J. F. Gonthier, R. M. Richard, H. R. McAlexander, M. Saitow, X. Wang,
+    P. Verma, M. H. Lechner, A. Jiang, S. Behnle, A. G. Heide,
+    M. F. Herbst, D. L. Poole, T. Győri, E. C. Mitchell, J. P. Pederson,
+    and A. M. Wallace
+
+             Previous Authors, Complete List of Code Contributors,
+                       and Citations for Specific Modules
+    https://github.com/psi4/psi4/blob/master/codemeta.json
+    https://github.com/psi4/psi4/graphs/contributors
+    https://psicode.org/psi4manual/master/introduction.html#citing-psifour
+
+    -----------------------------------------------------------------------
+
+
+    Psi4 started on: Tuesday, 05 May 2026 09:03AM
+
+    Process ID: 7847
+    Host:       debian
+    PSIDATADIR: /home/vdwv/DIPLOM_ITMO/CALCULATIONS_AND_SOFTS/softwares/Psi4_Shenanigans/psi4conda/share/psi4
+    Memory:     500.0 MiB
+    Threads:    1
+    Addons:     adcc, a̶m̶b̶i̶t̶, b̶s̶e̶, c̶c̶t̶3̶, c̶f̶o̶u̶r̶, c̶h̶e̶m̶p̶s̶2̶, c̶p̶p̶e̶, ddx, dftd3, dftd4,
+                dkh, ecpint, einsums, f̶o̶r̶t̶e̶, g̶a̶u̶x̶c̶, gcp, g̶d̶m̶a̶, geometric,
+                g̶p̶u̶_̶d̶f̶c̶c̶, i̶n̶t̶e̶g̶r̶a̶t̶o̶r̶x̶x̶, i̶p̶i̶, libefp, m̶d̶i̶, m̶p̶2̶d̶,
+                m̶r̶c̶c̶, ooo, o̶p̶e̶n̶f̶e̶r̶m̶i̶o̶n̶p̶s̶i̶4̶, pcmsolver, p̶s̶i̶4̶f̶o̶c̶k̶c̶i̶,
+                p̶s̶i̶x̶a̶s̶, r̶e̶s̶p̶, s̶i̶m̶i̶n̶t̶, s̶n̶s̶m̶p̶2̶, v̶2̶r̶d̶m̶_̶c̶a̶s̶s̶c̶f̶
+
+  ==> Input File <==
+
+--------------------------------------------------------------------------
+#! Sample HF/cc-pVTZ CCl2O computation
+
+memory 600 mb
+
+molecule ccl2o {
+  C1   0.000  1.383  0.000
+  C2   1.197  0.691  0.000
+  C3   1.197 -0.691  0.000
+  C4   0.000 -1.383  0.000
+  C5  -1.197 -0.691  0.000
+  C6  -1.197  0.691  0.000
+
+  H7   0.000  2.456  0.000
+  H8   2.127  1.228  0.000
+  H9   2.127 -1.228  0.000
+  H10  0.000 -2.456  0.000
+  H11 -2.127 -1.228  0.000
+  H12 -2.127  1.228  0.000
+
+  units angstrom
+}
+
+
+set basis cc-pVTZ
+energy('scf')
+
+--------------------------------------------------------------------------
+
+  Memory set to 572.205 MiB by Python driver.
+
+Scratch directory: /tmp/
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  6, 6, 3
+    Auxiliary basis highest AM E, G, H:  7, 7, 4
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on debian
+*** at Tue May  5 09:03:31 2026
+
+   => Loading Basis Set <=
+
+    Name: CC-PVTZ
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1-6  entry C          line   186 file /home/vdwv/DIPLOM_ITMO/CALCULATIONS_AND_SOFTS/softwares/Psi4_Shenanigans/psi4conda/share/psi4/basis/cc-pvtz.gbs 
+    atoms 7-12 entry H          line    23 file /home/vdwv/DIPLOM_ITMO/CALCULATIONS_AND_SOFTS/softwares/Psi4_Shenanigans/psi4conda/share/psi4/basis/cc-pvtz.gbs 
+
+
+         ---------------------------------------------------------
+                                   SCF
+               by Justin Turney, Rob Parrish, Andy Simmonett
+                          and Daniel G. A. Smith
+                              RHF Reference
+                        1 Threads,    572 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: d2h
+    Full point group: D2h
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C           -0.000000000000     1.383000000000     0.000000000000    12.000000000000
+         C            1.197000000000     0.691000000000     0.000000000000    12.000000000000
+         C            1.197000000000    -0.691000000000     0.000000000000    12.000000000000
+         C            0.000000000000    -1.383000000000     0.000000000000    12.000000000000
+         C           -1.197000000000    -0.691000000000     0.000000000000    12.000000000000
+         C           -1.197000000000     0.691000000000     0.000000000000    12.000000000000
+         H           -0.000000000000     2.456000000000     0.000000000000     1.007825032230
+         H            2.127000000000     1.228000000000     0.000000000000     1.007825032230
+         H            2.127000000000    -1.228000000000     0.000000000000     1.007825032230
+         H            0.000000000000    -2.456000000000     0.000000000000     1.007825032230
+         H           -2.127000000000    -1.228000000000     0.000000000000     1.007825032230
+         H           -2.127000000000     1.228000000000     0.000000000000     1.007825032230
+
+  Running in d2h symmetry.
+
+  Rotational constants: A =      0.19374  B =      0.19363  C =      0.09684 [cm^-1]
+  Rotational constants: A =   5808.08933  B =   5804.88188  C =   2903.24258 [MHz]
+  Nuclear repulsion =  205.341039296783038
+
+  Charge       = 0
+  Multiplicity = 1
+  Electrons    = 42
+  Nalpha       = 21
+  Nbeta        = 21
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is DF.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is SAD.
+  Energy threshold   = 1.00e-06
+  Density threshold  = 1.00e-06
+  Integral threshold = 1.00e-12
+
+  ==> Primary Basis <==
+
+  Basis Set: CC-PVTZ
+    Blend: CC-PVTZ
+    Number of shells: 96
+    Number of basis functions: 264
+    Number of Cartesian functions: 300
+    Spherical Harmonics?: true
+    Max angular momentum: 3
+
+   => Loading Basis Set <=
+
+    Name: (CC-PVTZ AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1-6  entry C          line   125 file /home/vdwv/DIPLOM_ITMO/CALCULATIONS_AND_SOFTS/softwares/Psi4_Shenanigans/psi4conda/share/psi4/basis/cc-pvtz-jkfit.gbs 
+    atoms 7-12 entry H          line    51 file /home/vdwv/DIPLOM_ITMO/CALCULATIONS_AND_SOFTS/softwares/Psi4_Shenanigans/psi4conda/share/psi4/basis/cc-pvtz-jkfit.gbs 
+
+  ==> Integral Setup <==
+
+  DFHelper Memory: AOs need 0.349 GiB; user supplied 0.419 GiB. 
+  SCF_SUBTYPE=INCORE selected. In-core MEM_DF algorithm will be used.
+  Using in-core AOs.
+
+  ==> MemDFJK: Density-Fitted J/K Matrices <==
+
+    J tasked:                   Yes
+    K tasked:                   Yes
+    wK tasked:                   No
+    OpenMP threads:               1
+    Memory [MiB]:               429
+    Algorithm:                 Core
+    Schwarz Cutoff:           1E-12
+    Mask sparsity (%):       2.4937
+    Fitting Condition:        1E-10
+
+   => Auxiliary Basis Set <=
+
+  Basis Set: (CC-PVTZ AUX)
+    Blend: CC-PVTZ-JKFIT
+    Number of shells: 210
+    Number of basis functions: 654
+    Number of Cartesian functions: 786
+    Spherical Harmonics?: true
+    Max angular momentum: 4
+
+  Minimum eigenvalue in the overlap matrix is 5.9246304556E-05.
+  Reciprocal condition number of the overlap matrix is 7.7011345490E-06.
+    Using symmetric orthogonalization.
+
+  ==> Pre-Iterations <==
+
+  SCF Guess: Superposition of Atomic Densities via on-the-fly atomic UHF (no occupation information).
+
+   -------------------------
+    Irrep   Nso     Nmo    
+   -------------------------
+     Ag        50      50 
+     B1g       40      40 
+     B2g       18      18 
+     B3g       24      24 
+     Au        18      18 
+     B1u       24      24 
+     B2u       50      50 
+     B3u       40      40 
+   -------------------------
+    Total     264     264
+   -------------------------
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-RHF iter SAD:  -227.48404960235419   -2.27484e+02   0.00000e+00 
+    Occupation by irrep:
+             Ag   B1g   B2g   B3g    Au   B1u   B2u   B3u 
+    DOCC [     6,    3,    1,    1,    0,    1,    5,    4 ]
+    NA   [     6,    3,    1,    1,    0,    1,    5,    4 ]
+    NB   [     6,    3,    1,    1,    0,    1,    5,    4 ]
+
+   @DF-RHF iter   1:  -209.51664195025148    1.79674e+01   4.35483e-02 ADIIS/DIIS
+   @DF-RHF iter   2:  -222.43036219063359   -1.29137e+01   4.08804e-02 ADIIS/DIIS
+   @DF-RHF iter   3:  -230.46891152892951   -8.03855e+00   6.61095e-03 ADIIS/DIIS
+   @DF-RHF iter   4:  -230.76031334125017   -2.91402e-01   1.66751e-03 ADIIS/DIIS
+   @DF-RHF iter   5:  -230.77940212891383   -1.90888e-02   3.02138e-04 ADIIS/DIIS
+   @DF-RHF iter   6:  -230.78037188187653   -9.69753e-04   5.08609e-05 DIIS
+   @DF-RHF iter   7:  -230.78040175134754   -2.98695e-05   7.92535e-06 DIIS
+   @DF-RHF iter   8:  -230.78040246365507   -7.12308e-07   2.58527e-06 DIIS
+   @DF-RHF iter   9:  -230.78040250141325   -3.77582e-08   5.04019e-07 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+    Orbital Energies [Eh]
+    ---------------------
+
+    Doubly Occupied:                                                      
+
+       1Ag   -11.229069     1B2u  -11.228462     1B3u  -11.228460  
+       2Ag   -11.227152     1B1g  -11.227144     2B2u  -11.226506  
+       3Ag    -1.155076     2B3u   -1.016855     3B2u   -1.016844  
+       4Ag    -0.825340     2B1g   -0.825013     5Ag    -0.713139  
+       4B2u   -0.642531     3B3u   -0.621335     5B2u   -0.588886  
+       4B3u   -0.588643     1B1u   -0.505296     6Ag    -0.494104  
+       3B1g   -0.493475     1B2g   -0.337063     1B3g   -0.336928  
+
+    Virtual:                                                              
+
+       2B1u    0.131453     1Au     0.131713     7Ag     0.146582  
+       6B2u    0.170149     5B3u    0.170160     8Ag     0.202412  
+       4B1g    0.202424     7B2u    0.223000     2B3g    0.336026  
+       9Ag     0.362441     5B1g    0.362476     6B3u    0.394138  
+      10Ag     0.416703     7B3u    0.423531     8B2u    0.423682  
+       3B1u    0.429915     2B2g    0.473474     3B3g    0.473505  
+      11Ag     0.511948     8B3u    0.520347     9B2u    0.520432  
+      10B2u    0.559273     4B1u    0.574096     2Au     0.574217  
+      12Ag     0.594799     6B1g    0.594921     9B3u    0.596959  
+      11B2u    0.597170     5B1u    0.625363     7B1g    0.643792  
+      13Ag     0.643820    14Ag     0.644350     8B1g    0.647403  
+       4B3g    0.671146    12B2u    0.706563    15Ag     0.731878  
+       9B1g    0.732001    10B3u    0.753781    13B2u    0.754087  
+       3B2g    0.848130     5B3g    0.864190     4B2g    0.864305  
+      11B3u    0.913271    14B2u    0.913373     6B1u    0.964598  
+       3Au     0.964674    10B1g    0.965478    15B2u    1.014706  
+      16Ag     1.017980    11B1g    1.036406    17Ag     1.036479  
+      12B3u    1.083248     7B1u    1.126245    16B2u    1.136056  
+       6B3g    1.219953     4Au     1.224450     8B1u    1.224738  
+      18Ag     1.231795    12B1g    1.232026     5B2g    1.302089  
+       7B3g    1.302102    19Ag     1.317624    13B3u    1.318587  
+      17B2u    1.318599    14B3u    1.382751    18B2u    1.382852  
+      15B3u    1.489767    13B1g    1.502828     8B3g    1.519017  
+       6B2g    1.519033    14B1g    1.519472    20Ag     1.519567  
+      19B2u    1.523481    16B3u    1.523771     9B1u    1.601619  
+       5Au     1.601881    21Ag     1.606260    17B3u    1.606308  
+      15B1g    1.606723    20B2u    1.606737    21B2u    1.635484  
+      16B1g    1.745473    22Ag     1.745539    23Ag     1.754700  
+       9B3g    1.772941     6Au     1.819700    22B2u    1.897912  
+      17B1g    2.099202    18B1g    2.194380    24Ag     2.194576  
+      23B2u    2.236264    18B3u    2.305517    24B2u    2.305901  
+      25Ag     2.335670    10B1u    2.336231     7B2g    2.446836  
+      10B3g    2.447173    19B3u    2.471593    25B2u    2.493007  
+      20B3u    2.493989    11B1u    2.546794     7Au     2.546875  
+       8B2g    2.612944    26Ag     2.664543    27Ag     2.748362  
+      19B1g    2.748974    26B2u    2.777339    21B3u    2.777513  
+      12B1u    2.809587    11B3g    2.861948    28Ag     2.925555  
+      20B1g    2.926499    22B3u    2.945819     8Au     2.958397  
+      13B1u    2.958547    14B1u    2.991006    12B3g    3.019205  
+       9B2g    3.019210    27B2u    3.031427    23B3u    3.031739  
+      13B3g    3.069165    10B2g    3.069303    29Ag     3.081451  
+      28B2u    3.115157    21B1g    3.177673    30Ag     3.177947  
+      14B3g    3.228116    11B2g    3.228390    15B1u    3.237221  
+      22B1g    3.310039    31Ag     3.310151    24B3u    3.337226  
+      29B2u    3.337516    32Ag     3.349763    25B3u    3.389551  
+      30B2u    3.389791    16B1u    3.390345     9Au     3.390753  
+      26B3u    3.412918    23B1g    3.431109    33Ag     3.431938  
+      17B1u    3.440606    10Au     3.441057    34Ag     3.443649  
+      31B2u    3.458382    12B2g    3.459721    24B1g    3.510990  
+      15B3g    3.620011    18B1u    3.621814    11Au     3.621884  
+      12Au     3.674560    27B3u    3.683123    32B2u    3.683587  
+      35Ag     3.697620    25B1g    3.698080    13B2g    3.720747  
+      16B3g    3.720960    28B3u    3.725081    33B2u    3.725778  
+      34B2u    3.796549    26B1g    3.924969    36Ag     3.925455  
+      14B2g    3.931692    17B3g    3.945357    37Ag     4.080661  
+      13Au     4.080883    19B1u    4.121266    29B3u    4.126461  
+      35B2u    4.126985    18B3g    4.132536    15B2g    4.132922  
+      30B3u    4.153834    27B1g    4.165170    28B1g    4.165273  
+      38Ag     4.165295    20B1u    4.189138    14Au     4.189319  
+      36B2u    4.214534    16B2g    4.219659    19B3g    4.219795  
+      37B2u    4.355562    31B3u    4.355616    38B2u    4.401078  
+      29B1g    4.430522    15Au     4.452169    21B1u    4.452714  
+      30B1g    4.490048    39Ag     4.491376    32B3u    4.513561  
+      40Ag     4.521885    20B3g    4.535715    31B1g    4.552281  
+      41Ag     4.552922    39B2u    4.612274    17B2g    4.689681  
+      21B3g    4.690897    32B1g    4.704806    42Ag     4.704941  
+      40B2u    4.708726    33B3u    4.709411    22B1u    4.711306  
+      16Au     4.712784    43Ag     4.909796    44Ag     4.945948  
+      33B1g    4.946413    23B1u    5.018321    34B3u    5.094735  
+      41B2u    5.095649    22B3g    5.103953    35B3u    5.144410  
+      42B2u    5.144877    18B2g    5.157685    23B3g    5.158628  
+      17Au     5.221185    36B3u    5.313683    45Ag     5.356579  
+      18Au     5.415941    24B1u    5.417010    34B1g    5.421867  
+      43B2u    5.429868    35B1g    5.460576    46Ag     5.460859  
+      44B2u    5.574058    37B3u    5.574274    38B3u    5.775195  
+      45B2u    5.775864    24B3g    5.875539    36B1g    6.139460  
+      47Ag     6.140115    46B2u    6.149901    48Ag     6.318712  
+      37B1g    6.319187    38B1g    6.427380    39B3u    6.592124  
+      47B2u    6.592506    48B2u    6.924185    39B1g    7.427028  
+      49Ag     9.571797    40B3u   13.366080    49B2u   13.375829  
+      50Ag    13.875839    40B1g   13.879822    50B2u   16.581470  
+
+    Final Occupation by Irrep:
+             Ag   B1g   B2g   B3g    Au   B1u   B2u   B3u 
+    DOCC [     6,    3,    1,    1,    0,    1,    5,    4 ]
+    NA   [     6,    3,    1,    1,    0,    1,    5,    4 ]
+    NB   [     6,    3,    1,    1,    0,    1,    5,    4 ]
+
+  @DF-RHF Final Energy:  -230.78040250141325
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =            205.3410392967830376
+    One-Electron Energy =                -717.1883577986028513
+    Two-Electron Energy =                 281.0669160004065930
+    Total Energy =                       -230.7804025014132208
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          0.0000000            0.0000000            0.0000000
+ Dipole Y            :          0.0000000            0.0000000            0.0000000
+ Dipole Z            :          0.0000000            0.0000000            0.0000000
+ Magnitude           :                                                    0.0000000
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on debian at Tue May  5 09:03:42 2026
+Module time:
+	user time   =      11.25 seconds =       0.19 minutes
+	system time =       0.25 seconds =       0.00 minutes
+	total time  =         11 seconds =       0.18 minutes
+Total time:
+	user time   =      11.25 seconds =       0.19 minutes
+	system time =       0.25 seconds =       0.00 minutes
+	total time  =         11 seconds =       0.18 minutes
+
+    Psi4 stopped on: Tuesday, 05 May 2026 09:03AM
+    Psi4 wall time for execution: 0:00:11.60
+
+*** Psi4 exiting successfully. Buy a developer a beer!

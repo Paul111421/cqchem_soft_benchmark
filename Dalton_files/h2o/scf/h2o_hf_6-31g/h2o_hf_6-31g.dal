@@ -1,0 +1,17 @@
+BASIS
+6-31G**
+Water using the 6-31G** basis
+Using automatic symmetry detection.
+Atomtypes=2 Angstrom
+Charge=8.0 Atoms=1
+O    0.000  .000 .114
+Charge=1.0 Atoms=2
+H1   0.000  0.753 -0.454
+H2   0.000 -0.753 -0.454
+
+**DALTON INPUT
+.RUN WAVE FUN
+**WAVE FUN
+.HF
+**END OF
+

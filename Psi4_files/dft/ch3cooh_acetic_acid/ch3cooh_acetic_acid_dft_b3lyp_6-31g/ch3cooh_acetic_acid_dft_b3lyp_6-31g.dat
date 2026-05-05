@@ -1,0 +1,20 @@
+#! Sample DFT/6-31G CH3COOH computation
+
+memory 600 mb
+
+molecule ch3cooh {
+  C1   1.134 -0.828  0.000
+  C2   0.000  0.153  0.000
+  O3   0.089  1.383  0.000
+  H4   2.082 -0.291  0.000
+  H5   1.072 -1.474  0.882
+  H6   1.072 -1.474 -0.882
+  O7  -1.224  0.492  0.000
+  H8  -1.953  0.166  0.000
+  units angstrom
+}
+
+
+set basis 6-31G
+energy('scf', dft_functional = 'b3lyp')
+

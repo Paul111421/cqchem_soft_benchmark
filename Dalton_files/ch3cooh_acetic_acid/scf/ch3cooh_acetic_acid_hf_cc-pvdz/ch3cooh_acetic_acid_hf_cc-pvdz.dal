@@ -1,0 +1,22 @@
+BASIS
+cc-pVDZ
+Acetic acid CH3COOH using the cc-pVDZ basis
+Using automatic symmetry detection
+AtomTypes=3 Angstrom 
+Charge=6.0 Atoms=2
+C1    1.025     -0.940      0.000
+C2    0.000      0.155      0.000
+Charge=8.0 Atoms=2 
+O3    0.229      1.318      0.000 
+O7   -1.242     -0.326      0.000
+Charge=1.0 Atoms=4
+H4    2.021     -0.507      0.000
+H5    0.885     -1.586      0.880
+H6    0.885     -1.586     -0.880
+H8   -1.840      0.414      0.000
+
+**DALTON INPUT
+.RUN WAVE FUN
+**WAVE FUN
+.HF
+**END OF

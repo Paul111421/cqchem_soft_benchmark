@@ -1,0 +1,26 @@
+start methane
+
+memory 1000 mb
+
+geometry units angstroms
+  C1     0.000     0.000     0.000
+  H1     0.628     0.628     0.628
+  H2    -0.628    -0.628     0.628
+  H3    -0.628     0.628    -0.628
+  H4     0.628    -0.628    -0.628 
+end
+
+basis
+  C library cc-pvtz
+  H library cc-pvtz
+end
+
+dft
+  mult 1 
+  xc b3lyp
+  maxiter 100
+  print low
+end
+
+task dft
+

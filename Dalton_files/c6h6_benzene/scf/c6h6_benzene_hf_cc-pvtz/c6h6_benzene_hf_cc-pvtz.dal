@@ -1,0 +1,25 @@
+BASIS
+cc-pVTZ
+Benzene C6H6 using the cc-pVTZ basis
+Using automatic symmetry detection
+AtomTypes=2 Angstrom 
+Charge=6.0 Atoms=6
+C1    0.000      1.383      0.000
+C2    1.197      0.691      0.000
+C3    1.197     -0.691      0.000
+C4    0.000     -1.383      0.000
+C5   -1.197     -0.691      0.000
+C6   -1.197      0.691      0.000
+Charge=1.0 Atoms=6
+H7    0.000      2.456      0.000
+H8    2.127      1.228      0.000
+H9    2.127     -1.228      0.000
+H10   0.000     -2.456      0.000
+H11  -2.127     -1.228      0.000
+H12  -2.127      1.228      0.000
+
+**DALTON INPUT
+.RUN WAVE FUN
+**WAVE FUN
+.HF
+**END OF

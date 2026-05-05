@@ -1,0 +1,26 @@
+start phosgene
+
+memory 1000 mb
+
+geometry units angstroms
+  O1     0.000     0.000     1.766
+  C2     0.000     0.000     0.540
+  Cl3    0.000     1.516    -0.511
+  Cl4    0.000    -1.516    -0.511
+end
+
+basis
+  O  library sto-3g
+  C  library sto-3g
+  Cl library sto-3g
+end
+
+dft
+  mult 1 
+  xc b3lyp
+  maxiter 100
+  print low
+end
+
+task dft
+

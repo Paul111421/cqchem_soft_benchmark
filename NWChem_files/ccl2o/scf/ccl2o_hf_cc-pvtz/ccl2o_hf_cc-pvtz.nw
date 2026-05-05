@@ -1,0 +1,29 @@
+start phosgene
+
+memory 1000 mb
+
+geometry units angstroms
+  O1     0.000     0.000     1.642
+  C2     0.000     0.000     0.489
+  Cl3    0.000     1.444    -0.473
+  Cl4    0.000    -1.444    -0.473
+end
+
+basis
+  O  library cc-pvtz
+  C  library cc-pvtz
+  Cl library cc-pvtz
+end
+
+scf
+  singlet
+  rhf
+  thresh 1e-8
+  maxiter 100
+  print low
+end
+
+task scf
+
+
+

@@ -1,0 +1,15 @@
+# Any line starting with the # character is a comment line
+#! Sample HF/cc-pVDZ H2O computation
+
+memory 600 mb
+
+molecule h2o {
+  O  0.000  0.000  0.116
+  H  0.000  0.749 -0.463
+  H  0.000 -0.749 -0.463
+  units angstrom
+}
+
+
+set basis cc-pVDZ
+energy('scf')

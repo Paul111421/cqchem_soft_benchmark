@@ -1,0 +1,22 @@
+BASIS
+STO-3G
+Acetic acid CH3COOH using the STO-3G basis
+Using automatic symmetry detection
+AtomTypes=3 Angstrom 
+Charge=6.0 Atoms=2
+C1    1.118     -0.893      0.000
+C2    0.000      0.162      0.000
+Charge=8.0 Atoms=2 
+O3    0.138      1.370      0.000 
+O7   -1.258     -0.433      0.000
+Charge=1.0 Atoms=4
+H4    2.085     -0.401      0.000
+H5    1.031     -1.522      0.881
+H6    1.031     -1.522     -0.881
+H8   -1.893      0.327      0.000
+
+**DALTON INPUT
+.RUN WAVE FUN
+**WAVE FUN
+.HF
+**END OF

@@ -1,0 +1,30 @@
+start acetic_acid
+
+memory 1000 mb
+
+geometry units angstroms
+  C1    1.159    -0.872     0.000
+  C2    0.000     0.170     0.000
+  O3    0.087     1.418     0.000
+  H4    2.125    -0.347     0.000
+  H5    1.092    -1.513     0.893
+  H6    1.092    -1.513    -0.893
+  O7   -1.256    -0.505     0.000
+  H8   -1.918     0.283     0.000
+end
+
+basis
+  C  library sto-3g
+  O  library sto-3g
+  H  library sto-3g
+end
+
+dft
+  mult 1 
+  xc b3lyp
+  maxiter 100
+  print low
+end
+
+task dft
+

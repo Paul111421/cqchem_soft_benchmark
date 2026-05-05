@@ -1,0 +1,17 @@
+#! Sample HF/cc-pVDZ CH4 computation
+
+memory 600 mb
+
+molecule ch4 {
+  C1  0.000  0.000  0.000
+  H2  0.630  0.630  0.630
+  H3 -0.630 -0.630  0.630
+  H4 -0.630  0.630 -0.630
+  H5  0.630 -0.630 -0.630  
+  units angstrom
+}
+
+
+set basis cc-pVDZ
+energy('scf')
+

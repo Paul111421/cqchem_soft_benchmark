@@ -1,0 +1,33 @@
+start benzene
+
+memory 2000 mb
+
+geometry units angstroms
+  C1     0.000     1.391     0.000
+  C2     1.204     0.695     0.000
+  C3     1.204    -0.695     0.000 
+  C4     0.000    -1.391     0.000
+  C5    -1.204    -0.695     0.000
+  C6    -1.204     0.695     0.000
+  H1     0.000     2.473     0.000
+  H2     2.142     1.236     0.000
+  H3     2.142    -1.236     0.000
+  H4     0.000    -2.473     0.000
+  H5    -2.142    -1.236     0.000
+  H6    -2.142     1.236     0.000
+end
+
+basis
+  C library cc-pVTZ
+  H library cc-pVTZ
+end
+
+dft
+  mult 1 
+  xc b3lyp
+  maxiter 100
+  print low
+end
+
+task dft
+

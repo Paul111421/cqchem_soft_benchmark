@@ -1,0 +1,33 @@
+start acetic_acid
+
+memory 1000 mb
+
+geometry units angstroms
+  C1    1.025    -0.940     0.000
+  C2    0.000     0.155     0.000
+  O3    0.229     1.318     0.000
+  H4    2.021    -0.507     0.000
+  H5    0.885    -1.568     0.880
+  H6    0.885    -1.568    -0.880
+  O7   -1.242    -0.326     0.000
+  H8   -1.840     0.414     0.000
+end
+
+basis
+  C  library cc-pvdz
+  O  library cc-pvdz
+  H  library cc-pvdz
+end
+
+scf
+  singlet
+  rhf
+  thresh 1e-8
+  maxiter 100
+  print low
+end
+
+task scf
+
+
+

@@ -1,0 +1,24 @@
+start h2o
+
+memory 1000 mb
+
+geometry units angstroms
+  O     0.000     0.000     0.114
+  H     0.000     0.791    -0.457
+  H     0.000    -0.791    -0.457
+end
+
+basis
+  O library 6-31g
+  H library 6-31g
+end
+
+dft
+  mult 1 
+  xc b3lyp
+  maxiter 100
+  print low
+end
+
+task dft
+

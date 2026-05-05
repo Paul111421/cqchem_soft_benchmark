@@ -1,0 +1,33 @@
+start benzene
+
+memory 2000 mb
+
+geometry units angstroms
+  C1     0.000     1.409     0.000
+  C2     1.220     0.705     0.000
+  C3     1.220    -0.705     0.000 
+  C4     0.000    -1.409     0.000
+  C5    -1.220    -0.705     0.000
+  C6    -1.220     0.705     0.000
+  H1     0.000     2.508     0.000
+  H2     2.172     1.254     0.000
+  H3     2.172    -1.254     0.000
+  H4     0.000    -2.508     0.000
+  H5    -2.172    -1.254     0.000
+  H6    -2.172     1.254     0.000
+end
+
+basis
+  C library sto-3g
+  H library sto-3g
+end
+
+dft
+  mult 1 
+  xc b3lyp
+  maxiter 100
+  print low
+end
+
+task dft
+

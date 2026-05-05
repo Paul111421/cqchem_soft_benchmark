@@ -1,0 +1,16 @@
+#! Sample DFT/STO-3G CCl2O computation
+
+memory 600 mb
+
+molecule ccl2o {
+  O1   0.000  0.000  1.766
+  C2   0.000  0.000  0.540
+  Cl3  0.000  1.516 -0.511
+  Cl4  0.000 -1.516 -0.511
+  units angstrom
+}
+
+
+set basis STO-3G
+energy('scf', dft_functional='b3lyp')
+

@@ -1,0 +1,20 @@
+#! Sample DFT/STO-3G CH3COOH computation
+
+memory 600 mb
+
+molecule ch3cooh {
+  C1   1.159 -0.872  0.000
+  C2   0.000  0.170  0.000
+  O3   0.087  1.418  0.000
+  H4   2.125 -0.347  0.000
+  H5   1.092 -1.513  0.893
+  H6   1.092 -1.513 -0.893
+  O7  -1.256  0.505  0.000
+  H8  -1.918  0.283  0.000
+  units angstrom
+}
+
+
+set basis STO-3G
+energy('scf', dft_functional = 'b3lyp')
+

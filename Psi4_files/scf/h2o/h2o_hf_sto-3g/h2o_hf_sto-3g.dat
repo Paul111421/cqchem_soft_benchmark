@@ -1,0 +1,15 @@
+#! Sample HF/STO-3G H2O computation
+
+memory 600 mb
+
+molecule h2o {
+  O  0.000  0.000  0.127
+  H  0.000  0.758 -0.509
+  H  0.000 -0.758 -0.509
+  units angstrom
+}
+
+
+set basis STO-3G
+energy('scf')
+

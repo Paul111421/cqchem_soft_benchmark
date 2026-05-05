@@ -1,0 +1,20 @@
+#! Sample HF/3-21G CH3COOH computation
+
+memory 600 mb
+
+molecule ch3cooh {
+  C1   1.120 -0.832  0.000
+  C2   0.000  0.163  0.000
+  O3   0.087  1.362  0.000
+  H4   2.066 -0.315  0.000
+  H5   1.037 -1.465  0.874
+  H6   1.037 -1.465 -0.874
+  O7  -1.201 -0.474  0.000
+  H8  -1.941  0.152  0.000
+  units angstrom
+}
+
+
+set basis 3-21G
+energy('scf')
+

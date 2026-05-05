@@ -1,0 +1,17 @@
+#! Sample DFT/STO-3G CH4 computation
+
+memory 600 mb
+
+molecule ch4 {
+  C1  0.000  0.000  0.000
+  H2  0.633  0.633  0.633
+  H3 -0.633 -0.633  0.633
+  H4 -0.633  0.633 -0.633
+  H5  0.633 -0.633 -0.633  
+  units angstrom
+}
+
+
+set basis STO-3G
+energy('scf',dft_functional = 'b3lyp')
+

@@ -1,0 +1,16 @@
+#! Sample DFT/cc-pVTZ CCl2O computation
+
+memory 600 mb
+
+molecule ccl2o {
+  O1   0.000  0.000  1.677
+  C2   0.000  0.000  0.504
+  Cl3  0.000  1.457 -0.483
+  Cl4  0.000 -1.457 -0.483
+  units angstrom
+}
+
+
+set basis cc-pVTZ
+energy('scf', dft_functional='b3lyp')
+

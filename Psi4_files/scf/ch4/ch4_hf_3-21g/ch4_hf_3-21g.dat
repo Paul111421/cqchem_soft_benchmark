@@ -1,0 +1,17 @@
+#! Sample HF/3-21G CH4 computation
+
+memory 600 mb
+
+molecule ch4 {
+  C1  0.000  0.000  0.000
+  H2  0.625  0.625  0.625
+  H3 -0.625 -0.625  0.625
+  H4 -0.625  0.625 -0.625
+  H5  0.625 -0.625 -0.625  
+  units angstrom
+}
+
+
+set basis 3-21G
+energy('scf')
+

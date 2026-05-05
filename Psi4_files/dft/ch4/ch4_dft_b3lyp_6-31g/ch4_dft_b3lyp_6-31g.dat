@@ -1,0 +1,17 @@
+#! Sample DFT/6-31G CH4 computation
+
+memory 600 mb
+
+molecule ch4 {
+  C1  0.000  0.000  0.000
+  H2  0.631  0.631  0.631
+  H3 -0.631 -0.631  0.631
+  H4 -0.631  0.631 -0.631
+  H5  0.631 -0.631 -0.631  
+  units angstrom
+}
+
+
+set basis 6-31G
+energy('scf',dft_functional = 'b3lyp')
+

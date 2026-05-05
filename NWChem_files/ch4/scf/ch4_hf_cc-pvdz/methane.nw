@@ -1,0 +1,29 @@
+start methane
+
+memory 1000 mb
+
+geometry units angstroms
+  C1     0.000     0.000     0.000
+  H1     0.630     0.630     0.630
+  H2    -0.630    -0.630     0.630
+  H3    -0.630     0.630    -0.630
+  H4     0.630    -0.630    -0.630 
+end
+
+basis
+  C library cc-pvdz
+  H library cc-pvdz
+end
+
+scf
+  singlet
+  rhf
+  thresh 1e-8
+  maxiter 100
+  print low
+end
+
+task scf
+
+
+

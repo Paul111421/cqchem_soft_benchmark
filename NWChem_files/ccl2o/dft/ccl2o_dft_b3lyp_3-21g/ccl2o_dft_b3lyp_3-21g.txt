@@ -1,0 +1,450 @@
+ argument  1 = ccl2o_dft_b3lyp_3-21g.nw
+                                         
+                                         
+
+
+             Northwest Computational Chemistry Package (NWChem) 7.2.3
+             --------------------------------------------------------
+
+
+                    Environmental Molecular Sciences Laboratory
+                       Pacific Northwest National Laboratory
+                                Richland, WA 99352
+
+                              Copyright (c) 1994-2022
+                       Pacific Northwest National Laboratory
+                            Battelle Memorial Institute
+
+             NWChem is an open-source computational chemistry package
+                        distributed under the terms of the
+                      Educational Community License (ECL) 2.0
+             A copy of the license is included with this distribution
+                              in the LICENSE.TXT file
+
+                                  ACKNOWLEDGMENT
+                                  --------------
+
+            This software and its documentation were developed at the
+            EMSL at Pacific Northwest National Laboratory, a multiprogram
+            national laboratory, operated for the U.S. Department of Energy
+            by Battelle under Contract Number DE-AC05-76RL01830. Support
+            for this work was provided by the Department of Energy Office
+            of Biological and Environmental Research, Office of Basic
+            Energy Sciences, and the Office of Advanced Scientific Computing.
+
+
+           Job information
+           ---------------
+
+    hostname        = debian
+    program         = nwchem
+    date            = Tue May  5 13:46:09 2026
+
+    compiled        = Mon_May_12_21:20:53_2025
+    source          = /build/reproducible-path/nwchem-7.2.3/build-openmpi
+    nwchem branch   = 7.2.3
+    nwchem revision = N/A
+    ga revision     = N/A
+    use scalapack   = T
+    input           = ccl2o_dft_b3lyp_3-21g.nw
+    prefix          = phosgene.
+    data base       = ./phosgene.db
+    status          = startup
+    nproc           =        1
+    time left       =     -1s
+
+
+
+           Memory information
+           ------------------
+
+    heap     =   32767998 doubles =    250.0 Mbytes
+    stack    =   32767995 doubles =    250.0 Mbytes
+    global   =   65536000 doubles =    500.0 Mbytes (distinct from heap & stack)
+    total    =  131071993 doubles =   1000.0 Mbytes
+    verify   = yes
+    hardfail = no 
+
+
+           Directory information
+           ---------------------
+
+  0 permanent = .
+  0 scratch   = .
+
+
+
+
+                                NWChem Input Module
+                                -------------------
+
+
+
+ Scaling coordinates for geometry "geometry" by  1.889725989
+ (inverse scale =  0.529177249)
+
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+  zeroes
+ CS  symmetry detected
+
+          ------
+          auto-z
+          ------
+  Looking for out-of-plane bends
+  no constraints, skipping    0.0000000000000000     
+  no constraints, skipping    0.0000000000000000     
+
+
+                             Geometry "geometry" -> ""
+                             -------------------------
+
+ Output coordinates in angstroms (scale by  1.889725989 to convert to a.u.)
+
+  No.       Tag          Charge          X              Y              Z
+ ---- ---------------- ---------- -------------- -------------- --------------
+    1 O1                   8.0000     1.76100000     0.00000000     0.00000000
+    2 C2                   6.0000     0.57600000     0.00000000     0.00000000
+    3 Cl3                 17.0000    -0.51600000    -1.51100000     0.00000000
+    4 Cl4                 17.0000    -0.51600000     1.51100000     0.00000000
+
+      Atomic Mass 
+      ----------- 
+
+      O1                15.994910
+      C2                12.000000
+      Cl3               34.968850
+      Cl4               34.968850
+
+
+ Effective nuclear repulsion energy (a.u.)     182.6175840449
+
+            Nuclear Dipole moment (a.u.) 
+            ----------------------------
+        X                 Y               Z
+ ---------------- ---------------- ----------------
+     0.0000000000     0.0000000000     0.0000000000
+
+      Symmetry information
+      --------------------
+
+ Group name             Cs        
+ Group number              2
+ Group order               2
+ No. of unique centers     4
+
+      Symmetry unique atoms
+
+     1    2    3    4
+
+
+
+                                Z-matrix (autoz)
+                                -------- 
+
+ Units are Angstrom for bonds and degrees for angles
+
+      Type          Name      I     J     K     L     M      Value
+      ----------- --------  ----- ----- ----- ----- ----- ----------
+    1 Stretch                  1     2                       1.18500
+    2 Stretch                  2     3                       1.86429
+    3 Stretch                  2     4                       1.86429
+    4 Bend                     1     2     3               125.85565
+    5 Bend                     1     2     4               125.85565
+    6 Bend                     3     2     4               108.28871
+    7 Torsion                  1     2     3     4         180.00000
+    8 Torsion                  1     2     4     3         180.00000
+    9 Torsion                  3     2     1     4         180.00000
+   10 Torsion                  1     4     2     3         180.00000
+   11 Torsion                  3     1     2     4         180.00000
+   12 Torsion                  1     3     2     4         180.00000
+
+
+            XYZ format geometry
+            -------------------
+     4
+ geometry
+ O1                    1.76100000     0.00000000     0.00000000
+ C2                    0.57600000     0.00000000     0.00000000
+ Cl3                  -0.51600000    -1.51100000     0.00000000
+ Cl4                  -0.51600000     1.51100000     0.00000000
+
+ ==============================================================================
+                                internuclear distances
+ ------------------------------------------------------------------------------
+       center one      |      center two      | atomic units |  angstroms
+ ------------------------------------------------------------------------------
+    2 C2               |   1 O1               |     2.23933  |     1.18500
+    3 Cl3              |   2 C2               |     3.52300  |     1.86429
+    4 Cl4              |   2 C2               |     3.52300  |     1.86429
+ ------------------------------------------------------------------------------
+                         number of included internuclear distances:          3
+ ==============================================================================
+
+
+
+ ==============================================================================
+                                 internuclear angles
+ ------------------------------------------------------------------------------
+        center 1       |       center 2       |       center 3       |  degrees
+ ------------------------------------------------------------------------------
+    1 O1               |   2 C2               |   3 Cl3              |   125.86
+    1 O1               |   2 C2               |   4 Cl4              |   125.86
+    3 Cl3              |   2 C2               |   4 Cl4              |   108.29
+ ------------------------------------------------------------------------------
+                            number of included internuclear angles:          3
+ ==============================================================================
+
+
+
+                      Basis "ao basis" -> "" (cartesian)
+                      -----
+  O (Oxygen)
+  ----------
+            Exponent  Coefficients 
+       -------------- ---------------------------------------------------------
+  1 S  3.22037000E+02  0.059239
+  1 S  4.84308000E+01  0.351500
+  1 S  1.04206000E+01  0.707658
+
+  2 S  7.40294000E+00 -0.404453
+  2 S  1.57620000E+00  1.221560
+
+  3 P  7.40294000E+00  0.244586
+  3 P  1.57620000E+00  0.853955
+
+  4 S  3.73684000E-01  1.000000
+
+  5 P  3.73684000E-01  1.000000
+
+  C (Carbon)
+  ----------
+            Exponent  Coefficients 
+       -------------- ---------------------------------------------------------
+  1 S  1.72256000E+02  0.061767
+  1 S  2.59109000E+01  0.358794
+  1 S  5.53335000E+00  0.700713
+
+  2 S  3.66498000E+00 -0.395897
+  2 S  7.70545000E-01  1.215840
+
+  3 P  3.66498000E+00  0.236460
+  3 P  7.70545000E-01  0.860619
+
+  4 S  1.95857000E-01  1.000000
+
+  5 P  1.95857000E-01  1.000000
+
+  Cl (Chlorine)
+  -------------
+            Exponent  Coefficients 
+       -------------- ---------------------------------------------------------
+  1 S  1.37640000E+03  0.064583
+  1 S  2.07857000E+02  0.380363
+  1 S  4.51554000E+01  0.678190
+
+  2 S  6.08014000E+01 -0.098764
+  2 S  1.39765000E+01  0.051134
+  2 S  3.88710000E+00  0.991337
+
+  3 P  6.08014000E+01  0.108598
+  3 P  1.39765000E+01  0.458682
+  3 P  3.88710000E+00  0.601962
+
+  4 S  1.35299000E+00 -0.222401
+  4 S  5.26955000E-01  1.182520
+
+  5 P  1.35299000E+00  0.219216
+  5 P  5.26955000E-01  0.822321
+
+  6 S  1.66714000E-01  1.000000
+
+  7 P  1.66714000E-01  1.000000
+
+
+
+ Summary of "ao basis" -> "" (cartesian)
+ ------------------------------------------------------------------------------
+       Tag                 Description            Shells   Functions and Types
+ ---------------- ------------------------------  ------  ---------------------
+ O                           3-21g                   5        9   3s2p
+ C                           3-21g                   5        9   3s2p
+ Cl                          3-21g                   7       13   4s3p
+
+
+
+                                 NWChem DFT Module
+                                 -----------------
+
+
+
+  Caching 1-el integrals 
+  WARNING: movecs_in_org=atomic not equal to movecs_in=./phosgene.movecs
+   Time after variat. SCF:      0.1
+   Time prior to 1st pass:      0.1
+
+           Memory utilization after 1st SCF pass: 
+           Heap Space remaining (MW):       31.19            31188702
+          Stack Space remaining (MW):       32.77            32767604
+
+   convergence    iter        energy       DeltaE   RMS-Dens  Diis-err    time
+ ---------------- ----- ----------------- --------- --------- ---------  ------
+ d= 0,ls=0.0,diis     1  -1028.4255749164 -1.21D+03  5.16D-02  1.74D+00     0.5
+ d= 0,ls=0.0,diis     2  -1027.6435302251  7.82D-01  3.30D-02  1.02D+01     0.6
+ d= 0,ls=0.0,diis     3  -1028.6323226882 -9.89D-01  1.37D-02  2.72D-01     0.8
+ d= 0,ls=0.0,diis     4  -1028.6565126229 -2.42D-02  5.02D-03  8.81D-02     0.9
+ d= 0,ls=0.0,diis     5  -1028.6668271973 -1.03D-02  5.80D-04  6.49D-04     1.0
+  Resetting Diis
+ d= 0,ls=0.0,diis     6  -1028.6669070443 -7.98D-05  8.65D-05  1.18D-05     1.1
+ d= 0,ls=0.0,diis     7  -1028.6669086963 -1.65D-06  2.63D-05  1.69D-07     1.2
+ d= 0,ls=0.0,diis     8  -1028.6669086511  4.52D-08  1.42D-05  5.77D-07     1.3
+ d= 0,ls=0.0,diis     9  -1028.6669087325 -8.14D-08  2.25D-06  1.44D-08     1.4
+
+
+         Total DFT energy =    -1028.666908732501
+      One electron energy =    -1781.937330181557
+           Coulomb energy =      640.927605934366
+    Exchange-Corr. energy =      -70.274768530231
+ Nuclear repulsion energy =      182.617584044922
+
+ Numeric. integr. density =       48.000001574171
+
+     Total iterative time =      1.3s
+
+
+
+                  Occupations of the irreducible representations
+                  ----------------------------------------------
+
+                     irrep           alpha         beta
+                     --------     --------     --------
+                     a'               19.0         19.0
+                     a"                5.0          5.0
+
+
+ Task  times  cpu:        2.1s     wall:        1.4s
+ Summary of allocated global arrays
+-----------------------------------
+  No active global arrays
+
+
+MA_summarize_allocated_blocks: starting scan ...
+MA_summarize_allocated_blocks: scan completed: 0 heap blocks, 0 stack blocks
+MA usage statistics:
+
+	allocation statistics:
+					      heap	     stack
+					      ----	     -----
+	current number of blocks	         0	         0
+	maximum number of blocks	        22	        57
+	current total bytes		         0	         0
+	maximum total bytes		  12634248	  22511800
+	maximum total K-bytes		     12635	     22512
+	maximum total M-bytes		        13	        23
+
+
+                                NWChem Input Module
+                                -------------------
+
+
+
+
+                                     CITATION
+                                     --------
+                Please cite the following reference when publishing
+                           results obtained with NWChem:
+
+          E. Apra, E. J. Bylaska, W. A. de Jong, N. Govind, K. Kowalski,
+       T. P. Straatsma, M. Valiev, H. J. J. van Dam, Y. Alexeev, J. Anchell,
+       V. Anisimov, F. W. Aquino, R. Atta-Fynn, J. Autschbach, N. P. Bauman,
+     J. C. Becca, D. E. Bernholdt, K. Bhaskaran-Nair, S. Bogatko, P. Borowski,
+         J. Boschen, J. Brabec, A. Bruner, E. Cauet, Y. Chen, G. N. Chuev,
+      C. J. Cramer, J. Daily, M. J. O. Deegan, T. H. Dunning Jr., M. Dupuis,
+   K. G. Dyall, G. I. Fann, S. A. Fischer, A. Fonari, H. Fruchtl, L. Gagliardi,
+      J. Garza, N. Gawande, S. Ghosh, K. Glaesemann, A. W. Gotz, J. Hammond,
+       V. Helms, E. D. Hermes, K. Hirao, S. Hirata, M. Jacquelin, L. Jensen,
+   B. G. Johnson, H. Jonsson, R. A. Kendall, M. Klemm, R. Kobayashi, V. Konkov,
+      S. Krishnamoorthy, M. Krishnan, Z. Lin, R. D. Lins, R. J. Littlefield,
+      A. J. Logsdail, K. Lopata, W. Ma, A. V. Marenich, J. Martin del Campo,
+   D. Mejia-Rodriguez, J. E. Moore, J. M. Mullin, T. Nakajima, D. R. Nascimento,
+    J. A. Nichols, P. J. Nichols, J. Nieplocha, A. Otero-de-la-Roza, B. Palmer,
+    A. Panyala, T. Pirojsirikul, B. Peng, R. Peverati, J. Pittner, L. Pollack,
+   R. M. Richard, P. Sadayappan, G. C. Schatz, W. A. Shelton, D. W. Silverstein,
+   D. M. A. Smith, T. A. Soares, D. Song, M. Swart, H. L. Taylor, G. S. Thomas,
+            V. Tipparaju, D. G. Truhlar, K. Tsemekhman, T. Van Voorhis,
+      A. Vazquez-Mayagoitia, P. Verma, O. Villa, A. Vishnu, K. D. Vogiatzis,
+        D. Wang, J. H. Weare, M. J. Williamson, T. L. Windus, K. Wolinski,
+        A. T. Wong, Q. Wu, C. Yang, Q. Yu, M. Zacharias, Z. Zhang, Y. Zhao,
+                                and R. J. Harrison
+                        "NWChem: Past, present, and future
+                         J. Chem. Phys. 152, 184102 (2020)
+                               doi:10.1063/5.0004997
+
+                                      AUTHORS
+                                      -------
+  E. Apra, E. J. Bylaska, N. Govind, K. Kowalski, M. Valiev, D. Mejia-Rodriguez,
+       A. Kunitsa, N. P. Bauman, A. Panyala, W. A. de Jong, T. P. Straatsma,
+   H. J. J. van Dam, D. Wang, T. L. Windus, J. Hammond, J. Autschbach, A. Woods,
+    K. Bhaskaran-Nair, J. Brabec, K. Lopata, S. A. Fischer, S. Krishnamoorthy,
+     M. Jacquelin, W. Ma, M. Klemm, O. Villa, Y. Chen, V. Anisimov, F. Aquino,
+     S. Hirata, M. T. Hackler, E. Hermes, L. Jensen, J. E. Moore, J. C. Becca,
+      V. Konjkov, T. Risthaus, M. Malagoli, A. Marenich, A. Otero-de-la-Roza,
+        J. Mullin, P. Nichols, R. Peverati, J. Pittner, Y. Zhao, P.-D. Fan,
+        A. Fonari, M. J. Williamson, R. J. Harrison, J. R. Rehr, M. Dupuis,
+     D. Silverstein, D. M. A. Smith, J. Nieplocha, V. Tipparaju, M. Krishnan,
+     B. E. Van Kuiken, A. Vazquez-Mayagoitia, M. Swart, Q. Wu, T. Van Voorhis,
+     A. A. Auer, M. Nooijen, L. D. Crosby, E. Brown, G. Cisneros, G. I. Fann,
+   H. Fruchtl, J. Garza, K. Hirao, R. A. Kendall, J. A. Nichols, K. Tsemekhman,
+    K. Wolinski, J. Anchell, D. E. Bernholdt, P. Borowski, T. Clark, D. Clerc,
+   H. Dachsel, M. J. O. Deegan, K. Dyall, D. Elwood, E. Glendening, M. Gutowski,
+   A. C. Hess, J. Jaffe, B. G. Johnson, J. Ju, R. Kobayashi, R. Kutteh, Z. Lin,
+   R. Littlefield, X. Long, B. Meng, T. Nakajima, S. Niu, L. Pollack, M. Rosing,
+   K. Glaesemann, G. Sandrone, M. Stave, H. Taylor, G. Thomas, J. H. van Lenthe,
+                               A. T. Wong, Z. Zhang.
+
+ Total times  cpu:        2.2s     wall:        1.4s

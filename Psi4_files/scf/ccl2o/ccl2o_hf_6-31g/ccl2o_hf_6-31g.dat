@@ -1,0 +1,16 @@
+#! Sample HF/6-31G CCl2O computation
+
+memory 600 mb
+
+molecule ccl2o {
+  O1   0.000  0.000  1.680
+  C2   0.000  0.000  0.505
+  Cl3  0.000  1.496 -0.484
+  Cl4  0.000 -1.496 -0.484
+  units angstrom
+}
+
+
+set basis 6-31G
+energy('scf')
+

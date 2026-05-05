@@ -1,0 +1,15 @@
+#! Sample DFT/6-31G H2O computation
+
+memory 600 mb
+
+molecule h2o {
+  O  0.000  0.000  0.114
+  H  0.000  0.791 -0.457
+  H  0.000 -0.791 -0.457
+  units angstrom
+}
+
+
+set basis 6-31G
+energy('scf', dft_functional = 'b3lyp')
+

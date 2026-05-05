@@ -1,0 +1,15 @@
+#! Sample HF/3-21G H2O computation
+
+memory 600 mb
+
+molecule h2o {
+  O  0.000  0.000  0.114
+  H  0.000  0.780 -0.456
+  H  0.000 -0.780 -0.456
+  units angstrom
+}
+
+
+set basis 3-21G
+energy('scf')
+
