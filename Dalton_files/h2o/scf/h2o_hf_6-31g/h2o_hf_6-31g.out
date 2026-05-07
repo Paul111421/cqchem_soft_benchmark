@@ -157,13 +157,13 @@
   Hans Agren,                  KTH Stockholm,             Sweden      (SIRIUS module, RESPONS, MC-SCRF solvation)
  --------------------------------------------------------------------------------
 
-     Date and time (Linux)  : Mon May  4 19:57:50 2026
+     Date and time (Linux)  : Thu May  7 23:43:47 2026
      Host name              : debian                                  
 
  * Work memory size             :    64000000 =  488.28 megabytes.
 
  * Directories for basis set searches:
-   1) /home/vdwv/DIPLOM_ITMO/CALCULATIONS_AND_SOFTS/softwares/Dalton_Shenanigans/dalton/dalton/build
+   1) /home/vdwv/DIPLOM_ITMO/CALCULATIONS_AND_SOFTS/git_files/Dalton_files/h2o/scf/h2o_hf_6-31g
    2) /home/vdwv/DIPLOM_ITMO/CALCULATIONS_AND_SOFTS/softwares/Dalton_Shenanigans/dalton/dalton/build/basis
 
 
@@ -203,8 +203,8 @@ Compilation information
  ----------------------------------
 
 BASIS
-6-31G**
-Water using the 6-31G** basis
+6-31G
+Water using the 6-31G basis
 Using automatic symmetry detection.
 Atomtypes=2 Angstrom
 Charge=8.0 Atoms=1
@@ -242,7 +242,7 @@ H2   0.000 -0.753 -0.454
 
     The two title cards from your ".mol" input:
     --------------------------------------------------------------------------------
- 1: Water using the 6-31G** basis
+ 1: Water using the 6-31G basis
  2: Using automatic symmetry detection.
     --------------------------------------------------------------------------------
 
@@ -255,10 +255,10 @@ H2   0.000 -0.753 -0.454
   Number of symmetry independent centers:    1
   Number of basis sets to read;    2
   Basis set file used for this atomic type with Z =   8 :
-     "/home/vdwv/DIPLOM_ITMO/CALCULATIONS_AND_SOFTS/softwares/Dalton_Shenanigans/dalton/dalton/build/basis/6-31G**"
+     "/home/vdwv/DIPLOM_ITMO/CALCULATIONS_AND_SOFTS/softwares/Dalton_Shenanigans/dalton/dalton/build/basis/6-31G"
 
   Info about the basis set file: your basis has no documentation.
-  Basis set: 6-31G**                                                                         
+  Basis set: 6-31G                                                                           
 
   Atomic type no.    2
   --------------------
@@ -266,10 +266,10 @@ H2   0.000 -0.753 -0.454
   Number of symmetry independent centers:    2
   Number of basis sets to read;    2
   Basis set file used for this atomic type with Z =   1 :
-     "/home/vdwv/DIPLOM_ITMO/CALCULATIONS_AND_SOFTS/softwares/Dalton_Shenanigans/dalton/dalton/build/basis/6-31G**"
+     "/home/vdwv/DIPLOM_ITMO/CALCULATIONS_AND_SOFTS/softwares/Dalton_Shenanigans/dalton/dalton/build/basis/6-31G"
 
   Info about the basis set file: your basis has no documentation.
-  Basis set: 6-31G**                                                                         
+  Basis set: 6-31G                                                                           
 
 
                       SYMADD: Addition of symmetry requested
@@ -351,16 +351,15 @@ H2     1 :      0.00000000     1.42296377     0.95323900  Isotope  1
   Number of atom types :    2
   Total number of atoms:    3
 
-  Basis set used is "6-31G**" from the basis set library.
+  Basis set used is "6-31G" from the basis set library.
 
   label    atoms   charge   prim   cont     basis
   ----------------------------------------------------------------------
-  O           1    8.0000    27    14      [10s4p1d|3s2p1d]                                   
-  H2          2    1.0000     7     5      [4s1p|2s1p]                                        
+  O           1    8.0000    22     9      [10s4p|3s2p]                                       
+  H2          2    1.0000     4     2      [4s|2s]                                            
   ----------------------------------------------------------------------
-  total:      3   10.0000    41    24
+  total:      3   10.0000    30    13
   ----------------------------------------------------------------------
-  Spherical harmonic basis used.
 
   Threshold for neglecting AO integrals:  1.00D-12
 
@@ -471,7 +470,7 @@ H2     1 :      0.00000000     1.42296377     0.95323900  Isotope  1
   Symmetry Orbitals
   -----------------
 
-  Number of orbitals in each symmetry:          11    4    7    2
+  Number of orbitals in each symmetry:           7    2    4    0
 
 
   Symmetry  A1 ( 1)
@@ -481,37 +480,25 @@ H2     1 :      0.00000000     1.42296377     0.95323900  Isotope  1
     3     O        1s         3
     4     O        2pz        6
     5     O        2pz        9
-    6     O        3d0       12
-    7     O        3d2+      14
-    8     H2       1s        15 +   16
-    9     H2       1s        17 +   18
-   10     H2       2py       21 -   22
-   11     H2       2pz       23 +   24
+    6     H2       1s        10 +   11
+    7     H2       1s        12 +   13
 
 
   Symmetry  B1 ( 2)
 
-   12     O        2px        4
-   13     O        2px        7
-   14     O        3d1+      13
-   15     H2       2px       19 +   20
+    8     O        2px        4
+    9     O        2px        7
 
 
   Symmetry  B2 ( 3)
 
-   16     O        2py        5
-   17     O        2py        8
-   18     O        3d1-      11
-   19     H2       1s        15 -   16
-   20     H2       1s        17 -   18
-   21     H2       2py       21 +   22
-   22     H2       2pz       23 -   24
+   10     O        2py        5
+   11     O        2py        8
+   12     H2       1s        10 -   11
+   13     H2       1s        12 -   13
 
 
-  Symmetry  A2 ( 4)
-
-   23     O        3d2-      10
-   24     H2       2px       19 -   20
+  No orbitals in symmetry  A2 ( 4)
 
   Symmetries of electric field:  B1 (2)  B2 (3)  A1 (1)
 
@@ -558,7 +545,7 @@ Calculation of 2-electron integrals are postponed until they are needed.
 
 
   Total CPU  time used in HERMIT:   0.01 seconds
-  Total wall time used in HERMIT:   0.01 seconds
+  Total wall time used in HERMIT:   0.00 seconds
 
 
                         .----------------------------------.
@@ -592,11 +579,11 @@ Calculation of 2-electron integrals are postponed until they are needed.
  **********************************************************************
 
  
-     Date and time (Linux)  : Mon May  4 19:57:50 2026
+     Date and time (Linux)  : Thu May  7 23:43:47 2026
      Host name              : debian                                  
 
  Title lines from ".mol" input file:
-     Water using the 6-31G** basis
+     Water using the 6-31G basis
      Using automatic symmetry detection.
 
  Print level on unit LUPRI =   2 is   0
@@ -623,8 +610,8 @@ Calculation of 2-electron integrals are postponed until they are needed.
 @    Abelian symmetry species          All |    1    2    3    4
 @                                          |  A1   B1   B2   A2 
                                        --- |  ---  ---  ---  ---
-@    Total number of orbitals           24 |   11    4    7    2
-@    Number of basis functions          24 |   11    4    7    2
+@    Total number of orbitals           13 |    7    2    4    0
+@    Number of basis functions          13 |    7    2    4    0
 
       ** Automatic occupation of RHF orbitals **
 
@@ -662,52 +649,48 @@ Calculating AOSUPINT
 ***  INFO  GETGAB: GABSO--- not found on AOGABINT. Regenerating.
 
  Threshold for neglecting two-electron integrals:  1.00D-12
- HERMIT - Number of two-electron integrals written:       11412 ( 25.3% )
+ HERMIT - Number of two-electron integrals written:        1270 ( 30.3% )
  HERMIT - Megabytes written:                              0.137
 
      (Precalculated AO two-electron integrals are transformed to P-supermatrix elements.
       Threshold for discarding integrals :  1.00D-12 )
 
-@  1  -75.7945472091       2.33D+00  -7.58D+01     3   1   1   0
-      Virial theorem: -V/T =      1.999732
-@    MULPOP   O      -0.44; H2  _1  0.22; H2  _2  0.22; 
+@  1  -75.7912002644       2.08D+00  -7.58D+01     3   1   1   0
+      Virial theorem: -V/T =      1.999279
+@    MULPOP   O      -0.48; H2  _1  0.24; H2  _2  0.24; 
    1  Level shift: doubly occupied orbital energies shifted by -2.00D-01
  -----------------------------------------------------------------------------
-@  2  -76.0104421567       3.80D-01  -2.16D-01     3   1   1   0
-      Virial theorem: -V/T =      2.000527
-@    MULPOP   O      -0.57; H2  _1  0.29; H2  _2  0.29; 
+@  2  -75.9692070733       4.07D-01  -1.78D-01     3   1   1   0
+      Virial theorem: -V/T =      1.998950
+@    MULPOP   O      -0.71; H2  _1  0.35; H2  _2  0.35; 
    2  Level shift: doubly occupied orbital energies shifted by -5.00D-02
  -----------------------------------------------------------------------------
-@  3  -76.0222252739       1.01D-01  -1.18D-02     3   1   1   0
-      Virial theorem: -V/T =      2.001869
-@    MULPOP   O      -0.64; H2  _1  0.32; H2  _2  0.32; 
+@  3  -75.9835370231       1.04D-01  -1.43D-02     3   1   1   0
+      Virial theorem: -V/T =      2.000696
+@    MULPOP   O      -0.76; H2  _1  0.38; H2  _2  0.38; 
    3  Level shift: doubly occupied orbital energies shifted by -2.50D-02
  -----------------------------------------------------------------------------
-@  4  -76.0230564802       3.50D-02  -8.31D-04     3   1   1   0
-      Virial theorem: -V/T =      2.000222
-@    MULPOP   O      -0.68; H2  _1  0.34; H2  _2  0.34; 
+@  4  -75.9841978793       4.47D-02  -6.61D-04     3   1   1   0
+      Virial theorem: -V/T =      1.998321
+@    MULPOP   O      -0.79; H2  _1  0.40; H2  _2  0.40; 
    4  Level shift: doubly occupied orbital energies shifted by -1.25D-02
  -----------------------------------------------------------------------------
-@  5  -76.0231223773       5.85D-03  -6.59D-05     3   1   1   0
-      Virial theorem: -V/T =      2.000896
-@    MULPOP   O      -0.68; H2  _1  0.34; H2  _2  0.34; 
+@  5  -75.9843007862       3.98D-03  -1.03D-04     3   1   1   0
+      Virial theorem: -V/T =      1.999114
+@    MULPOP   O      -0.79; H2  _1  0.40; H2  _2  0.40; 
  -----------------------------------------------------------------------------
-@  6  -76.0231246209       9.38D-04  -2.24D-06     3   1   1   0
-      Virial theorem: -V/T =      2.000818
-@    MULPOP   O      -0.68; H2  _1  0.34; H2  _2  0.34; 
+@  6  -75.9843025329       6.23D-04  -1.75D-06     3   1   1   0
+      Virial theorem: -V/T =      1.999113
+@    MULPOP   O      -0.79; H2  _1  0.40; H2  _2  0.40; 
  -----------------------------------------------------------------------------
-@  7  -76.0231247182       1.32D-04  -9.73D-08     3   1   1   0
-      Virial theorem: -V/T =      2.000827
-@    MULPOP   O      -0.68; H2  _1  0.34; H2  _2  0.34; 
+@  7  -75.9843025804       6.60D-05  -4.75D-08     3   1   1   0
+      Virial theorem: -V/T =      1.999117
+@    MULPOP   O      -0.79; H2  _1  0.40; H2  _2  0.40; 
  -----------------------------------------------------------------------------
-@  8  -76.0231247204       1.22D-05  -2.20D-09     3   1   1   0
-      Virial theorem: -V/T =      2.000828
-@    MULPOP   O      -0.68; H2  _1  0.34; H2  _2  0.34; 
- -----------------------------------------------------------------------------
-@  9  -76.0231247204       3.94D-06  -1.70D-11     3   1   1   0
+@  8  -75.9843025810       9.41D-06  -6.05D-10     3   1   1   0
 
-@ *** DIIS converged in   9 iterations !
-@     Converged SCF energy, gradient:    -76.023124720425    3.94D-06
+@ *** DIIS converged in   8 iterations !
+@     Converged SCF energy, gradient:    -75.984302580967    9.41D-06
     - total time used in SIRFCK :              0.00 seconds
 
 
@@ -718,21 +701,17 @@ Calculating AOSUPINT
 
  Sym       Hartree-Fock orbital energies
 
-1 A1    -20.55449229    -1.34596488    -0.56805412     0.21897750     1.09703268
-          1.18786424     1.59821713     1.84173091     2.61059638     3.40755771
-          3.78443180
+1 A1    -20.55653678    -1.36240436    -0.55992742     0.20739416     1.20074737
+          1.21193069     1.69196902
 
-2 B1     -0.49706298     1.16950011     1.93174262     2.99784605
+2 B1     -0.50149932     1.16496167
 
-3 B2     -0.71324509     0.30868752     1.01698369     1.29595304     2.58297518
-          2.84160487     3.94547790
+3 B2     -0.72075526     0.30383729     1.07140404     1.38599631
 
-4 A2      1.80292160     3.00636439
-
-    E(LUMO) :     0.21897750 au (symmetry 1)
-  - E(HOMO) :    -0.49706298 au (symmetry 2)
+    E(LUMO) :     0.20739416 au (symmetry 1)
+  - E(HOMO) :    -0.50149932 au (symmetry 2)
   ------------------------------------------
-    gap     :     0.71604048 au
+    gap     :     0.70889347 au
 
  --- Writing SIRIFC interface file
 
@@ -747,31 +726,31 @@ Calculating AOSUPINT
      HF-SCF KT symmetry 1 ( A1 ) in point group C2v -- 3 principal poles with pole strength 1
 
    ============  ============  ============
-      20.554492      1.345965      0.568054
-     559.316187     36.625567     15.457539
+      20.556537      1.362404      0.559927
+     559.371820     37.072908     15.236400
    ============  ============  ============
 
      HF-SCF KT symmetry 2 ( B1 ) in point group C2v -- 1 principal poles with pole strength 1
 
    ============
-       0.497063
-      13.525772
+       0.501499
+      13.646491
    ============
 
      HF-SCF KT symmetry 3 ( B2 ) in point group C2v -- 1 principal poles with pole strength 1
 
    ============
-       0.713245
-      19.408386
+       0.720755
+      19.612748
    ============
 
 @ Summary of HF-SCF KT ionization potentials [eV]:
 
-@ Symmetry 1 (A1 ) :   559.316      36.626      15.458
+@ Symmetry 1 (A1 ) :   559.372      37.073      15.236
 
-@ Symmetry 2 (B1 ) :    13.526
+@ Symmetry 2 (B1 ) :    13.646
 
-@ Symmetry 3 (B2 ) :    19.408
+@ Symmetry 3 (B2 ) :    19.613
 
 @ Symmetry 4 (A2 ) :  No IPs in this symmetry
 
@@ -779,7 +758,7 @@ Calculating AOSUPINT
 --------------------------------------------------------------------------------
 
 
- CPU and wall time for SCF :       0.015       0.016
+ CPU and wall time for SCF :       0.011       0.011
 
 
                        .-----------------------------------.
@@ -791,17 +770,17 @@ Calculating AOSUPINT
 @    Spatial symmetry:            1 ( irrep  A1  in C2v )
 @    Total charge of molecule:    0
 
-@    Final HF energy:             -76.023124720425                 
+@    Final HF energy:             -75.984302580967                 
 @    Nuclear repulsion:             9.328057835975
-@    Electronic energy:           -85.351182556401
+@    Electronic energy:           -85.312360416942
 
-@    Final gradient norm:           0.000003936898
+@    Final gradient norm:           0.000009405378
 
  
-     Date and time (Linux)  : Mon May  4 19:57:50 2026
+     Date and time (Linux)  : Thu May  7 23:43:47 2026
      Host name              : debian                                  
 
-File label for MO orbitals:   4May26   FOCKDIIS
+File label for MO orbitals:   7May26   FOCKDIIS
 
  (Only coefficients > 0.0100 are printed.)
 
@@ -809,64 +788,35 @@ File label for MO orbitals:   4May26   FOCKDIIS
  ------------------------------------------------
 
     Orbital         1        2        3        4        5        6        7
-   1 O   :1s     0.9957  -0.2120   0.0703   0.0875  -0.0386  -0.0606   0.0522
-   2 O   :1s     0.0221   0.4689  -0.1670  -0.0972   0.2823   0.3616  -1.4738
-   3 O   :1s    -0.0059   0.4343  -0.3073  -1.2588  -0.5531   0.0752   2.5449
-   4 O   :2pz    0.0022   0.0851   0.5563  -0.2105   0.4915  -0.7715  -0.0829
-   5 O   :2pz   -0.0009   0.0328   0.3951  -0.4919  -0.3240   1.1861   0.5619
-   6 O   :3d0   -0.0000   0.0030   0.0283  -0.0135   0.0055   0.0326   0.1491
-   7 O   :3d2+  -0.0005  -0.0023  -0.0043   0.0167   0.2684   0.0848   0.1589
-   8 H2  :1s    -0.0006   0.1489   0.1438   0.0573  -0.6421  -0.4140  -0.2491
-   9 H2  :1s     0.0013   0.0101   0.0823   1.0268   0.6083  -0.0274  -0.6468
-  10 H2  :2py    0.0010  -0.0227  -0.0161  -0.0115  -0.1967   0.0110   0.0259
-  11 H2  :2pz    0.0008  -0.0141   0.0053  -0.0080  -0.0633   0.0456   0.2001
-
-    Orbital         8        9       10       11
-   1 O   :1s    -0.0063   0.0009   0.0051  -0.1069
-   2 O   :1s     0.5094   0.6761   0.1277   0.2617
-   3 O   :1s    -0.9911  -1.2103  -0.3565   1.8628
-   4 O   :2pz    0.0117   0.1628  -0.0246   0.6320
-   5 O   :2pz   -0.5157  -0.6689  -0.5053   0.7638
-   6 O   :3d0    0.6859  -0.1981  -0.9232   0.0775
-   7 O   :3d2+  -0.0551   0.9288  -0.4053  -0.8367
-   8 H2  :1s     0.2690   0.7066   0.1124  -1.0123
-   9 H2  :1s     0.2043   0.0927   0.1003  -0.4339
-  10 H2  :2py   -0.1911   0.1204  -0.5170   0.8494
-  11 H2  :2pz    0.2190   0.1576   0.6576   0.6288
+   1 O   :1s     0.9958  -0.2123   0.0755   0.0857   0.0287  -0.0820   0.0550
+   2 O   :1s     0.0220   0.4687  -0.1794  -0.1037  -0.1118   0.4670  -1.6866
+   3 O   :1s    -0.0081   0.4743  -0.3064  -1.2102   0.1203  -0.0165   2.8047
+   4 O   :2pz    0.0021   0.1137   0.5541  -0.2227  -0.8667  -0.4688  -0.1831
+   5 O   :2pz   -0.0019   0.0588   0.4057  -0.4660   0.5731   1.0759   0.8364
+   6 H2  :1s     0.0001   0.1435   0.1414   0.0556   0.6404  -0.7840  -0.4458
+   7 H2  :1s     0.0020  -0.0090   0.0761   1.0060  -0.4849   0.2136  -0.6393
 
  Molecular orbitals for symmetry species 2  (B1 )
  ------------------------------------------------
 
-    Orbital         1        2        3        4
-   1 O   :2px    0.6378  -0.9625  -0.0362  -0.0441
-   2 O   :2px    0.5007   1.0440  -0.1879  -0.4136
-   3 O   :3d1+   0.0276   0.0139   0.7842  -0.7429
-   4 H2  :2px    0.0208  -0.0148   0.2984   0.7726
+    Orbital         1        2
+   1 O   :2px    0.6412  -0.9617
+   2 O   :2px    0.5104   1.0371
 
  Molecular orbitals for symmetry species 3  (B2 )
  ------------------------------------------------
 
-    Orbital         1        2        3        4        5        6        7
-   1 O   :2py    0.5024  -0.3255   0.1392   0.8691   0.0505   0.3540   0.8157
-   2 O   :2py    0.2727  -0.8699   0.4062  -1.7984  -0.5474  -0.5106   1.3251
-   3 O   :3d1-   0.0333  -0.0397  -0.2773  -0.1653   0.0643  -0.8459   1.4783
-   4 H2  :1s     0.2435   0.0505  -0.7677   0.1329   0.1759   0.5538  -1.2656
-   5 H2  :1s     0.1279   1.4437   0.5779   0.9977   0.0990  -0.1652  -0.5149
-   6 H2  :2py   -0.0116  -0.0162  -0.0554  -0.1823   0.4970   0.2777   0.8368
-   7 H2  :2pz   -0.0189  -0.0092  -0.1073  -0.1306  -0.5728   0.2887   0.6677
+    Orbital         1        2        3        4
+   1 O   :2py    0.5075  -0.3319   0.0862  -1.0398
+   2 O   :2py    0.2638  -0.8331   0.8454   1.5304
+   3 H2  :1s     0.2663   0.0357  -0.9798   0.1269
+   4 H2  :1s     0.1191   1.4134   0.4174  -0.9435
 
- Molecular orbitals for symmetry species 4  (A2 )
- ------------------------------------------------
-
-    Orbital         1        2
-   1 O   :3d2-   0.6690   0.9113
-   2 H2  :2px    0.3515  -0.7232
-
-  Total CPU  time used in SIRIUS :   0.02 seconds
-  Total wall time used in SIRIUS :   0.02 seconds
+  Total CPU  time used in SIRIUS :   0.01 seconds
+  Total wall time used in SIRIUS :   0.01 seconds
 
  
-     Date and time (Linux)  : Mon May  4 19:57:50 2026
+     Date and time (Linux)  : Thu May  7 23:43:47 2026
      Host name              : debian                                  
 
 
@@ -878,5 +828,5 @@ File label for MO orbitals:   4May26   FOCKDIIS
   Total wall time used in DALTON:   0.04 seconds
 
  
-     Date and time (Linux)  : Mon May  4 19:57:50 2026
+     Date and time (Linux)  : Thu May  7 23:43:47 2026
      Host name              : debian                                  
