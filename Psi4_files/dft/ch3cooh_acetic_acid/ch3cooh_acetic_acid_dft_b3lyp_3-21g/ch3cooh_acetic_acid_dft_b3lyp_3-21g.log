@@ -1,3 +1,3 @@
-2026-05-05:10:26:37,624 INFO     [psi4.driver.task_planner:259] PLANNING Atomic:  keywords={'function_kwargs': {}}
-2026-05-05:10:26:37,629 INFO     [psi4.driver.driver:525] Compute energy(): method=scf, basis=3-21g, molecule=ch3cooh, nre=127.78849507847595
-2026-05-05:10:26:43,766 INFO     [psi4.driver.driver:528] Return energy(): -227.45013960804184
+2026-05-07:17:30:40,941 INFO     [psi4.driver.task_planner:259] PLANNING Atomic:  keywords={'function_kwargs': {}}
+2026-05-07:17:30:40,944 INFO     [psi4.driver.driver:525] Compute energy(): method=scf, basis=3-21g, molecule=ch3cooh, nre=119.54758455965208
+2026-05-07:17:30:44,999 INFO     [psi4.driver.driver:528] Return energy(): -227.81225922468732

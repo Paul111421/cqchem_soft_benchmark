@@ -1,0 +1,20 @@
+BASIS
+cc-pVTZ
+Phosgene CCl2O using the cc-pVTZ basis
+Using automatic symmetry detection
+AtomTypes=3 Angstrom 
+Charge=8.0 Atoms=1
+O      0.000      0.000      1.677
+Charge=6.0 Atoms=1
+C      0.000      0.000      0.504
+Charge=17.0 Atoms=2
+Cl1    0.000      1.457     -0.483
+Cl2    0.000     -1.457     -0.483
+
+**DALTON INPUT
+.RUN WAVE FUN
+**WAVE FUN
+.DFT
+ B3LYP
+**END OF
+

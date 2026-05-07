@@ -1,0 +1,18 @@
+BASIS
+cc-pVDZ
+Water using the cc-pVDZ basis
+Using automatic symmetry detection.
+Atomtypes=2 Angstrom
+Charge=8.0 Atoms=1
+O    0.000  0.000  0.121
+Charge=1.0 Atoms=2
+H1   0.000  0.756 -0.484
+H2   0.000 -0.756 -0.484
+
+**DALTON INPUT
+.RUN WAVE FUN
+**WAVE FUN
+.DFT
+ B3LYP
+**END OF
+

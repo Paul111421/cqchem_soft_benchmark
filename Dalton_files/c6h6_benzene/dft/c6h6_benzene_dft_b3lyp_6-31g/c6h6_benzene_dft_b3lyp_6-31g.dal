@@ -1,0 +1,27 @@
+BASIS
+6-31G
+Benzene C6H6 using the 6-31G basis
+Using automatic symmetry detection
+AtomTypes=2 Angstrom 
+Charge=6.0 Atoms=6
+C1    0.000      1.400      0.000
+C2    1.213      0.700      0.000
+C3    1.213     -0.700      0.000
+C4    0.000     -1.400      0.000
+C5   -1.213     -0.700      0.000
+C6   -1.213      0.700      0.000
+Charge=1.0 Atoms=6
+H7    0.000      2.486      0.000
+H8    2.153      1.243      0.000
+H9    2.153     -1.243      0.000
+H10   0.000     -2.486      0.000
+H11  -2.153     -1.243      0.000
+H12  -2.153      1.243      0.000
+
+**DALTON INPUT
+.RUN WAVE FUN
+**WAVE FUN
+.DFT
+ B3LYP
+**END OF
+

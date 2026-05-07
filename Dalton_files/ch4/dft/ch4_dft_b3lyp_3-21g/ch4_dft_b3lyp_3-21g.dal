@@ -1,0 +1,20 @@
+BASIS
+3-21G 
+Methane CH4 using the 3-21G basis
+Using automatic symmetry detection
+AtomTypes=2 Angstrom 
+Charge=6.0 Atoms=1
+C     0.000      0.000      0.000
+Charge=1.0 Atoms=4
+H1    0.631      0.631      0.631
+H2   -0.631     -0.631      0.631
+H3   -0.631      0.631     -0.631
+H4    0.631     -0.631     -0.631
+
+**DALTON INPUT
+.RUN WAVE FUN
+**WAVE FUN
+.DFT
+ B3LYP
+**END OF
+

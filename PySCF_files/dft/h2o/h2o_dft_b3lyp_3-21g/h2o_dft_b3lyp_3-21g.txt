@@ -1,0 +1,104 @@
+
+
+******** <class 'pyscf.dft.rks.RKS'> ********
+method = RKS
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+diis_damp = 0
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 50
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /tmp/tmp5_cia_00
+max_memory 4000 MB (current use 101 MB)
+XC library pyscf.dft.libxc version 7.0.0
+    S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
+XC functionals = b3lyp
+    P. J. Stephens, F. J. Devlin, C. F. Chabalowski, and M. J. Frisch.,  J. Phys. Chem. 98, 11623 (1994)
+small_rho_cutoff = 0
+Set gradient conv threshold to 3.16228e-05
+Initial guess from minao.
+    CPU time for setting up grids      0.11 sec, wall time      0.07 sec
+nelec by numeric integration = 9.956582606176823
+    CPU time for vxc      0.64 sec, wall time      0.09 sec
+E1 = -120.4759438049355  Ecoul = 44.89831638501909  Exc = -9.108858572912856
+init E= -75.8537499925359
+cond(S) = 26.796618988679583
+    CPU time for initialize scf      1.39 sec, wall time      0.31 sec
+  HOMO = -0.405004630454401  LUMO = 0.0322861347237713
+  mo_energy =
+[-19.24507436  -1.14029247  -0.59562639  -0.48827801  -0.40500463
+   0.03228613   0.10581622   0.87577553   0.93674393   1.27446028
+   1.35839587   1.49163063   2.5821545 ]
+nelec by numeric integration = 9.999999931212137
+    CPU time for vxc      0.79 sec, wall time      0.11 sec
+E1 = -123.91285038560264  Ecoul = 48.75149869777997  Exc = -9.56222623639518
+cycle= 1 E= -75.8908419239245  delta_E= -0.0371  |g|= 0.673  |ddm|= 1.19
+    CPU time for cycle= 1      1.28 sec, wall time      0.17 sec
+  HOMO = -0.0910713035964585  LUMO = 0.133830652539642
+  mo_energy =
+[-18.5813854   -0.84045304  -0.39966473  -0.17621121  -0.0910713
+   0.13383065   0.23678876   0.93792032   1.00281137   1.61515033
+   1.69731364   1.8098352    2.89131965]
+nelec by numeric integration = 9.99999983128211
+    CPU time for vxc      0.57 sec, wall time      0.08 sec
+E1 = -119.5041822302863  Ecoul = 43.85587458089991  Exc = -9.022321347045919
+cycle= 2 E= -75.837892996139  delta_E= 0.0529  |g|= 0.879  |ddm|= 1.06
+    CPU time for cycle= 2      1.03 sec, wall time      0.15 sec
+  HOMO = -0.259720265817149  LUMO = 0.0833611133401884
+  mo_energy =
+[-19.0093407   -0.98090038  -0.49635681  -0.32818941  -0.25972027
+   0.08336111   0.17303371   0.90868124   0.96963445   1.43568532
+   1.52485306   1.64141516   2.72625755]
+nelec by numeric integration = 9.999999876414684
+    CPU time for vxc      0.36 sec, wall time      0.05 sec
+E1 = -122.1065552724544  Ecoul = 46.62943436376628  Exc = -9.32956945552261
+cycle= 3 E= -75.9739543639174  delta_E= -0.136  |g|= 0.00578  |ddm|= 0.616
+    CPU time for cycle= 3      1.05 sec, wall time      0.14 sec
+  HOMO = -0.256407048972081  LUMO = 0.0874826262535873
+  mo_energy =
+[-19.00267918  -0.97538593  -0.4921315   -0.32656254  -0.25640705
+   0.08748263   0.17686457   0.91333983   0.97531035   1.43895913
+   1.5280489    1.64473294   2.73077549]
+nelec by numeric integration = 9.999999876380418
+    CPU time for vxc      0.75 sec, wall time      0.10 sec
+E1 = -122.08695585979743  Ecoul = 46.60723496495354  Exc = -9.326979746675825
+cycle= 4 E= -75.9739646412264  delta_E= -1.03e-05  |g|= 0.00125  |ddm|= 0.00817
+    CPU time for cycle= 4      1.37 sec, wall time      0.18 sec
+  HOMO = -0.256848866385463  LUMO = 0.0872633634874358
+  mo_energy =
+[-19.0032243   -0.97584144  -0.49248991  -0.3269206   -0.25684887
+   0.08726336   0.17668755   0.91311585   0.97504072   1.43855846
+   1.52772935   1.64439441   2.73036242]
+nelec by numeric integration = 9.999999876378308
+    CPU time for vxc      0.44 sec, wall time      0.06 sec
+E1 = -122.09019070478878  Ecoul = 46.61089911531191  Exc = -9.327409342185604
+cycle= 5 E= -75.9739649313691  delta_E= -2.9e-07  |g|= 4.46e-05  |ddm|= 0.0011
+    CPU time for cycle= 5      1.00 sec, wall time      0.13 sec
+  HOMO = -0.256862172539356  LUMO = 0.0872645173861444
+  mo_energy =
+[-19.00322955  -0.97584269  -0.49248643  -0.32693459  -0.25686217
+   0.08726452   0.17668881   0.91312133   0.97504927   1.43854649
+   1.52771707   1.64438445   2.73035758]
+nelec by numeric integration = 9.999999876383956
+    CPU time for vxc      0.75 sec, wall time      0.10 sec
+E1 = -122.0903408825662  Ecoul = 46.61106505062937  Exc = -9.327425100662207
+cycle= 6 E= -75.9739649323057  delta_E= -9.37e-10  |g|= 1.63e-05  |ddm|= 0.00011
+    CPU time for cycle= 6      1.24 sec, wall time      0.16 sec
+  HOMO = -0.256853832339199  LUMO = 0.0872660095463047
+  mo_energy =
+[-19.00321534  -0.97583586  -0.49248159  -0.32692689  -0.25685383
+   0.08726601   0.1766913    0.91312201   0.97504989   1.43855429
+   1.527725     1.6443919    2.73036505]
+nelec by numeric integration = 9.999999876381375
+    CPU time for vxc      0.86 sec, wall time      0.11 sec
+E1 = -122.09023969477073  Ecoul = 46.61095121213109  Exc = -9.327412449938379
+Extra cycle  E= -75.9739649322847  delta_E= 2.1e-11  |g|= 2.1e-05  |ddm|= 2.05e-05
+    CPU time for scf_cycle      9.52 sec, wall time      1.39 sec
+    CPU time for SCF      9.52 sec, wall time      1.39 sec
+converged SCF energy = -75.9739649322847

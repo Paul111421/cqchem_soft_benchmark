@@ -1,0 +1,20 @@
+BASIS
+STO-3G
+Phosgene CCl2O using the STO-3G basis
+Using automatic symmetry detection
+AtomTypes=3 Angstrom 
+Charge=8.0 Atoms=1
+O      0.000      0.000      1.766
+Charge=6.0 Atoms=1
+C      0.000      0.000      0.540
+Charge=17.0 Atoms=2
+Cl1    0.000      1.516     -0.511
+Cl2    0.000     -1.516     -0.511
+
+**DALTON INPUT
+.RUN WAVE FUN
+**WAVE FUN
+.DFT
+ B3LYP
+**END OF
+
