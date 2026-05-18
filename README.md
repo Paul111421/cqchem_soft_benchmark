@@ -3,9 +3,18 @@ Welcome to dedicated repository of Computational Quantum Chemistry Software Benc
 
 As for software currently benchmarked (note that we specifically accented on "free" in terms of FSF software):
 
-| Program | General description                                                                                | Site                        | Git repo                            | Compared to |
+| Program | General description                                                                                | Site                        | Program`s git repo                  | Compared to | 
 |---------|----------------------------------------------------------------------------------------------------|-----------------------------|-------------------------------------|-------------|
 | Dalton  | High-accuracy HF/DFT calculations in Fortran, one of the oldest and deepest packages available     | https://daltonprogram.org/  | https://gitlab.com/dalton/dalton    | NIST CCCBDB |
 | NWChem  | HPC oriented quantum mechanics and hybrid methods calculations in Fortran                          | http://nwchemgit.github.io/ | https://github.com/nwchemgit/nwchem | NIST CCCBDB |
 | PySCF   | Python-native quantum chemistry computations with a wide variety of hybrid methods and GPU support | https://pyscf.org           | https://github.com/pyscf/pyscf      | NIST CCCBDB |
 | Psi4    | Python frontend, C/C++ backend - a powerful user-frienldy suite for quantum chemistry calculations | https://psicode.org/        | https://github.com/psi4/psi4        | NIST CCCBDB |
+
+We also host collected files on **Zenodo**! We <ins>strognly encourage</ins> you to use the following links for citations as it heavily helps us with metrics and possibilities:
+
+| Program | Zenodo DOI                                                                                                  |
+| --------|-------------------------------------------------------------------------------------------------------------|
+| Dalton  | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20275751.svg)](https://doi.org/10.5281/zenodo.20275751) |
+| NWChem  | To be added...                                                                                              |
+| PySCF   | To be added...                                                                                              |
+| Psi4    | To be added...                                                                                              |
